@@ -1,10 +1,8 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 import { configureStore } from "./store";
 import { Provider } from "react-redux";
-import { CounterView } from "./pages/CounterView"
-
-
+import { CounterView } from "./pages/CounterView";
 
 function App() {
   const store = configureStore();
@@ -12,7 +10,6 @@ function App() {
     <Provider store={store}>
       <CounterView></CounterView>
     </Provider>
-
   );
 }
 

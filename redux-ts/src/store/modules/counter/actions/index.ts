@@ -4,21 +4,21 @@ export const INCREMENT = "INCREMENT";
 export const DECREMENT = "DECREMENT";
 
 interface IncrementAction extends Action {
-    type: typeof INCREMENT;
+  type: typeof INCREMENT;
 }
 export const increment = (): IncrementAction => {
-    return {
-        type: INCREMENT
-    };
+  return {
+    type: INCREMENT,
+  };
 };
 
 interface DecrementAction extends Action {
-    type: typeof DECREMENT;
+  type: typeof DECREMENT;
 }
 export const decrement = (): DecrementAction => {
-    return {
-        type: DECREMENT
-    };
+  return {
+    type: DECREMENT,
+  };
 };
 
 export type CounterActions = IncrementAction | DecrementAction;
